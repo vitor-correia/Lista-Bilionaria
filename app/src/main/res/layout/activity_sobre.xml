@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SobreActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/IDBANNERADMOB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageLogo9"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cabecalhoapp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textSobre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Desenvolvemos um método único de análises quando o assunto é opção binária. Temos uma consistência na assertividade que não é vista em nenhum outro lugar, cerca de 80%. Salas de sinais cobram de R$ 80,00 a R$ 150,00 e não chegam perto da nossa assertividade pois gostam de trabalhar com mais de 100 sinais por dia, aqui é diferente. \n\nUtilizamos cerca de 4 filtros para definir os sinais e só passamos os que chegam nesses 4 filtros o que não é muito fácil, assim utilizamos de 15 a 20 sinais com apenas 1 Martingale quando necessário e por somente R$ 50,00 mensais. \n\nVeja nosso blog de resultados e verá na prática o que estamos falando.\n\nSe tiver alguma dúvida, fale conosco pelo WhatsApp ou pelo Telegram."
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="SuporteWhatsapp"
+                android:text="Suporte pelo Whatsapp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="SuporteTelegram"
+                android:text="Suporte pelo Telegram" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

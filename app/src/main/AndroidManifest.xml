@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twobrotherscompany.listabilionaria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ListaBilionaria">
+        <activity android:name=".SobreActivity" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SemInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BlogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListaFreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListaVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DescontoZeroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DescontoCinquentaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DescontoCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueroVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChecarVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TardeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

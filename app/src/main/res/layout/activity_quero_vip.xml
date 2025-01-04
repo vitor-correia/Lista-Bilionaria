@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".QueroVipActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cabecalhoapp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Como fuciona a VIP?"
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="São de 15 a 20 sinais de segunda a sábado com 80% de assertividade pelo menor preço possível. Nossa assertividade é comprovada através do nosso blog, nele colocamos nossos resultados e algumas dicas para fugir das perdas. \n\n  Você também não precisará assistir anúncios para visualizar os sinais.\n\n  Aceitamos somente pagamentos via PIX. Seja VIP agora mesmo por R$ 50,00 mensais, venha lucrar com a gente. \n\n  Observação: Se você tiver cupom de desconto, insira na próxima tela."
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonVerificar4"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="Continuar"
+                android:text="Continuar"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputChave" />
+
+            <Button
+                android:id="@+id/buttonVerificar3"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="MenuPrincipal"
+                android:text="Menu Principal"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputChave" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
